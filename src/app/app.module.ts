@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LoginPageModule } from './login/login.module';
 import { AboutUsPageModule } from './about-us/about-us.module';
+import { HomePageModule } from './home/home.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,8 @@ import { AboutUsPageModule } from './about-us/about-us.module';
     IonicModule.forRoot(), 
     AppRoutingModule,
     LoginPageModule,
-    AboutUsPageModule
+    AboutUsPageModule,
+    HomePageModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
