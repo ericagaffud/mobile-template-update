@@ -1,0 +1,43 @@
+ion-content {
+    --background: linear-gradient(to top right, #74b2f0, #c99db3, #fd804d);
+    height: 100%;
+    position: relative;
+
+    #img_card {
+        text-align: center;
+
+        .login_img {
+            margin-top: 5vh;
+            width: 60%;
+        }
+    }
+
+    // #form_container {
+    //     form {
+    //         // ion-item {
+    //         //     margin: 20px;
+    //         // }
+    //     }
+    // }
+}
+
+.login-wrap {
+    display: block;
+    margin-right: 5%;
+    margin-top: 5vh;
+    margin-left: 5%;
+    border-radius: 15px;
+}
+
+.passwordIcon {
+    font-size: 20px !important;
+    position: absolute !important;
+    margin: 0 auto !important;
+    right: 3%;
+    color: gray;
+    z-index: 2;
+}
+
+.none {
+    display: none;
+}
