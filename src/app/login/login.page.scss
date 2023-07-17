@@ -12,13 +12,46 @@ ion-content {
         }
     }
 
-    // #form_container {
-    //     form {
-    //         // ion-item {
-    //         //     margin: 20px;
-    //         // }
-    //     }
-    // }
+    #form_container {
+        display: block;
+        margin-right: 8%;
+        margin-top: 5vh;
+        margin-left: 8%;
+        border-radius: 15px;
+
+        form {
+            ion-row {
+                ion-col {
+                    ion-item {
+                        ion-icon {
+                            height: 100%;
+                            vertical-align: middle;
+                            text-align: center;
+                            padding-right: 10px;
+                        }
+
+                        #userId, #password {
+                            min-height: 37px;
+                        }
+
+                        .note {
+                            font-size: 14px;
+                            color: white;
+                        }
+                    }
+
+                    .forgotPass {
+                        font-size: 14px;
+                        color: white;
+                    }
+
+                    .pass_item {
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .login-wrap {
