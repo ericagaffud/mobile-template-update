@@ -60,4 +60,8 @@ export class AppComponent {
   goToPrivacyPolicy() {
     this.route.navigate(['privacy-policy']);
   }
+
+  goToEula() {
+    this.route.navigate(['eula']);
+  }
 }
