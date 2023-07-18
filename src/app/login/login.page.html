@@ -3,7 +3,7 @@
     <img class="login_img" src="../../assets/imgs/icon-white.png" alt="Background omnipay white logo">
   </div>
   <div id="form_container">
-    <form>
+    <form #form="ngForm">
       <ion-row>
         <ion-col>
           <ion-item lines="none">
@@ -40,7 +40,7 @@
       <ion-row>
         <ion-col>
           <div class="text-center">
-            <ion-button color="secondary"> LOGIN </ion-button>
+            <ion-button color="secondary" (click)="login()"> LOGIN </ion-button>
           </div>
         </ion-col>
       </ion-row>
