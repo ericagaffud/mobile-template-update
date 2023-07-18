@@ -64,4 +64,8 @@ export class AppComponent {
   goToEula() {
     this.route.navigate(['eula']);
   }
+
+  goToFaq() {
+    this.route.navigate(['faq']);
+  }
 }
