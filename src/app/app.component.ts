@@ -56,4 +56,8 @@ export class AppComponent {
   goToAboutUs() {
     this.route.navigate(['about-us']);
   }
+
+  goToPrivacyPolicy() {
+    this.route.navigate(['privacy-policy']);
+  }
 }
