@@ -1,0 +1,41 @@
+ion-content {
+    --background: linear-gradient(to top right, #74b2f0, #c99db3, #fd804d);
+
+    #eulawrap {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        div {
+            div {
+                p {
+                    text-align: justify;
+                }
+
+                .top_header {
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+
+                .header {
+                    font-size: 18px;
+                    margin-top: 0;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                .gen_tc {
+                    font-size: 18px;
+                }
+
+                ol {
+                    list-style: lower-alpha;
+                }
+            }
+        }
+    }
+
+}

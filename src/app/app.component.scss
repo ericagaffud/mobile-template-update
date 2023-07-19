@@ -53,3 +53,29 @@ ion-label {
 ion-col {
   padding: 0px 0 0 0;
 }
+
+.phone_contact {
+  padding-top: 10px; 
+
+  ion-col {
+
+    img {
+      width: 9%;
+    }
+
+    p {
+      color: #696969;
+    }
+  }
+}
+
+.email_contact {
+  ion-col {
+    img {
+      width: 10%;
+    }
+    p {
+      color: #696969;
+    }
+  }
+}

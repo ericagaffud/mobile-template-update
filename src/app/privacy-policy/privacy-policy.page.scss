@@ -1,0 +1,30 @@
+ion-content {
+    --background: linear-gradient(to top right, #74b2f0, #c99db3, #fd804d);
+
+    #privacywrap {
+        font-size: 14px;
+        text-align: justify;
+        padding: 0 15px;
+
+        .section-label {
+            color: #000;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .mgbt-25 {
+            margin-bottom: 25px !important;
+            display: block;
+        }
+
+        ul,
+        ol {
+            list-style: none !important;
+            padding: 0;
+        }
+    }
+}
+
+
