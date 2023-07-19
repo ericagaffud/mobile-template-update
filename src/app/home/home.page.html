@@ -1,13 +1,113 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>home</ion-title>
+<ion-header>
+  <ion-toolbar id="home-toolbar">
+    <ion-buttons slot="start">
+      <ion-menu-button color="primary"></ion-menu-button>
+    </ion-buttons>
+    <img class="home-img" src="../assets/imgs/logo.png"/>
+    <ion-buttons slot="end">
+      <ion-button click="goToSettings()">
+        <ion-icon color="primary" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-text-center" scroll-y="true">
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event)" slot="fixed">
+    <ion-refresher-content pullingIcon="chevron-down-circle-outline" pullingText="Pull to refresh"
+      refreshingSpinner="circles" refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher> -->
+  <div id="card-container" class="bg card-container">
+    <!-- <div [hidden]="hasCards" style="padding-top: 1rem"> -->
+      <img style="width: 40%;" src="assets/imgs/oh-no.png" />
+    <!-- </div> -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+          <p class="font13">
+            You currently have no enrolled cards!
+          </p>
+        </ion-col>
+        <ion-col size="12">
+          <ion-button color="secondary" click="goToEnrollCard()">
+            ADD A CARD NOW
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div id="slider">
+      <!-- <div id="slider-img" #sliderImg class="slider-img" [hidden]="hasCards"> -->
+        <!-- <ion-slides #slides pager="true" (ionSlideDidChange)="sliderChanged()">
+          <ion-slide pager="true" *ngFor="let card of cardsToDisplay"> -->
+            <ion-grid>
+            <ion-row>
+              <ion-col>
+                <div class="ion-text-center">
+                  <ion-card #genericCard class="generic-card">
+                    <div class="home-balance-label">MAIN CURRENCY BALANCE:
+                    </div>
+                    <!-- <div id="{{ 'home-balance-' + balance.currencyCd.toLowerCase() }}"
+                      *ngFor="let balance of card.cardBalance" class="home-card-balance">
+                      {{balance.currencyCd}}
+                      {{balance.balanceAmt}}
+                    </div> -->
+                    <!-- <div class="home-card-number">{{card.maskedPan}}
+                    </div>
+                    <div class="home-card-name">{{card.nameOnCard}}
+                    </div> -->
+                    <ion-card-content>
+                    </ion-card-content>
+                  </ion-card>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        <!-- </ion-slide>
+      </ion-slides> -->
+    </div>  
+  </div>
+  <div class="container-transac" id="recent-activity">
+    <div style="background-color: white;">
+      <ion-row style="height: 35px;">
+        <ion-col size="9">
+          <div class="ion-text-left">
+            Your Last 10 Transactions
+          </div>
+        </ion-col>
+        <!-- <ion-col (click)="goToTransactions()" size="3" style="text-align: right;">
+          <ion-icon color="primary" name="arrow-forward-circle-outline"
+            style="font-size: 28px; padding:0;margin-top: -2px;"></ion-icon>
+        </ion-col> -->
+      </ion-row>
+    </div>
+  </div>
+  <!-- <div id="transactionList">
+    <ion-list style="padding-top:0px">
+      <ion-item *ngFor="let item of transactions"> -->
+        <!-- <ion-col size="2" class="transaction-fields" style="padding-right: 10px;">
+          <ion-row class="tranMonth-text ">{{item.tranMonth}}</ion-row>
+          <ion-row class="tranDay-text ">{{item.tranDay}}</ion-row>
+          <ion-row class="tranYr-text ">{{item.tranYr}}</ion-row>
+        </ion-col> -->
+        <!-- <ion-col size="4">
+          <ion-row class="payment-sub font10">{{item.tranType}}</ion-row>
+          <ion-row [style.color]="item.color" class="paymentType-text">{{item.tranCurr}}
+            {{item.tranAmt}}
+          </ion-row>
+        </ion-col>
+        <ion-col size="4">
+          <ion-row class="payment-sub font10">Balance</ion-row>
+          <ion-row class="paymentType-text">{{item.balanceCurr}} {{item.balance}}</ion-row>
+        </ion-col>
+        <ion-col size="2">
+          <ion-row *ngIf="item.success == 'Successful'; else elseBlock" [style.color]="item.statusColor" class="success-icon"><ion-icon name="checkmark-outline"></ion-icon></ion-row>
+          <ng-template #elseBlock>
+            <ion-row [style.color]="item.statusColor" class="success-icon"><b><ion-icon name="close-outline"></ion-icon></b></ion-row>
+          </ng-template>
+          <ion-button class="font10 viewdtls-btn" color="primary" (click)="viewDetails(item)">...</ion-button>
+        </ion-col>
+      </ion-item>
+    </ion-list>
+  </div> -->
 </ion-content>
+<!-- <app-home-tabs></app-home-tabs> -->

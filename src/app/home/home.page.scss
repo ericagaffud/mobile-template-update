@@ -1,0 +1,240 @@
+#home-balance-usd,
+#home-balance-jpy,
+#home-balance-cny,
+#home-balance-sgd,
+#home-balance-hkd,
+#home-balance-cad,
+#home-balance-gbp,
+#home-balance-eur,
+#home-balance-aud {
+    display: none;
+}
+
+#home-balance-php {
+    color: black;
+    float: left;
+    position: absolute;
+    top: 12vw;
+    left: 7vw;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+// .home-card-swipe {
+//     background-size: cover;
+//     border-radius: 15px;
+//     height: 180px;
+//     width: 100%;
+// }
+
+.slide-zoom {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.welcome-txt {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+.name-txt {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+.slide-div {
+    text-align: center;
+    width: 280px;
+    height: 160px;
+    margin-left: 4.5rem;
+}
+// .slide-img {
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 8px;
+//     box-shadow: 0 2px 5px -1px black;
+// }
+
+.slider-img {
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        from(#74b2f0),
+        color-stop(#c99db3),
+        to(#fd804d)
+    );
+    background: linear-gradient(to top right, #74b2f0, #c99db3, #fd804d);
+}
+
+.home-balance-label {
+    color: black;
+    float: left;
+    position: absolute;
+    top: 4vw;
+    left: 7vw;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.home-balance {
+    color: black;
+    float: left;
+    position: absolute;
+    top: 10vw;
+    left: 7vw;
+    font-size: 18px;
+    font-weight: bold;
+}
+.home-card-number {
+    color: black;
+    float: left;
+    position: absolute;
+    top: 32vw;
+    left: 7vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+.home-card-name {
+    color: black;
+    float: left;
+    position: absolute;
+    top: 40vw;
+    left: 7vw;
+    font-size: 16px;
+    font-weight: bold;
+}
+.card-number {
+    color: black;
+    float: left;
+    position: fixed;
+    top: 22vw;
+    left: 18vw;
+    font-size: 13pt;
+    font-weight: bold;
+}
+.card-name {
+    color: black;
+    float: left;
+    position: fixed;
+    top: 33vw;
+    left: 18vw;
+    font-size: 9pt;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.card-expiry {
+    color: black;
+    font-size: 8pt;
+    position: fixed;
+    left: 57.5vw;
+    top: 28vw;
+    font-weight: bold;
+}
+.card-balance {
+    color: black;
+    font-size: 10pt;
+    position: fixed;
+    left: 21vw;
+    top: 42.5vw;
+    font-weight: bold;
+}
+
+.container-transac {
+    padding-left: 4%;
+    padding-right: 3%;
+}
+
+.tranDay-text {
+    font-size: 13px;
+}
+.tranMonth-text {
+    font-size: 10px;
+}
+.tranYr-text {
+    font-size: 10px;
+}
+.paymentType-text {
+    font-size: 11px;
+}
+.merchant-text {
+    font-size: 11px;
+}
+.transaction-fields {
+    border-right: 1px solid green;
+    // padding-right: 2.5rem;
+}
+.amount-text {
+    font-size: 12px;
+}
+
+#transactionList {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.generic-card {
+    background-image: url(../../assets/imgs/omnicardbg.png);
+    border-radius: 20px !important;
+    background-size: cover;
+    padding-top: 50vw;
+    width: 90vw;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+ion-content {
+    background: white;
+}
+
+.payment-sub {
+    font-weight: bold;
+}
+
+.viewdtls-btn {
+    height: 20px;
+    max-width: 100%;
+}
+
+.success-icon {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+ion-button {
+    width: 48px; 
+    height: 48px; 
+    font-size: 24px;
+}
+.ion-text-left {
+    margin-top: 5px;
+    font-size: 14px; 
+    color:var(--ion-color-primary)
+}
+
+// Super Small Phones
+@media screen and (max-width: 319px) {
+    .home-card-number {
+        font-size: 14px;
+    }
+
+    .home-card-name {
+        font-size: 12px;
+    }
+
+    .merchant-text, .font10 {
+        font-size: 8px;
+    }
+
+    .amount-text {
+        font-size: 10px;
+    }
+}
+
